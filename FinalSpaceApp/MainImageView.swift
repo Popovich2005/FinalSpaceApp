@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainImageView: View {
     
-    let character: WelcomeElement
+    let character: Character
 
     
     var body: some View {
@@ -26,6 +26,20 @@ struct MainImageView: View {
                                 height: reader.frame(in: .global)
                                     .minY + SizeConstants.avatarHeight + 10
                             )
+                    } else {
+                        ZStack {
+                            Rectangle()
+                                .frame(height: 100)
+                                .foregroundStyle(.secondary)
+                                .opacity(0.3)
+                                .cornerRadius(10)
+                            
+                            Image(systemName: "photo")
+                                .resizable()
+                                .foregroundStyle(.secondary)
+                                .scaledToFit()
+                                .frame(height: 50)
+                        }
                     }
                 }
             }

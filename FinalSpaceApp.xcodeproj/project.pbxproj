@@ -22,6 +22,8 @@
 		3AA215B22C430B4300501BC0 /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215B12C430B4300501BC0 /* MainImageView.swift */; };
 		3AA215B42C430CBE00501BC0 /* GradientAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */; };
 		3AA215B72C430D6600501BC0 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215B62C430D6600501BC0 /* BackButtonView.swift */; };
+		3AA215BB2C45293700501BC0 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */; };
+		3AA215BD2C453B7800501BC0 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215BC2C453B7800501BC0 /* EpisodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		3AA215B12C430B4300501BC0 /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
 		3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAvatarView.swift; sourceTree = "<group>"; };
 		3AA215B62C430D6600501BC0 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
+		3AA215BC2C453B7800501BC0 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				3AA215A72C42DAB700501BC0 /* NetworkError.swift */,
 				3AA215AD2C4307CF00501BC0 /* CharacterDetailView.swift */,
 				3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */,
+				3AA215BC2C453B7800501BC0 /* EpisodeView.swift */,
+				3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */,
 				3AA215B62C430D6600501BC0 /* BackButtonView.swift */,
 				3AA215B12C430B4300501BC0 /* MainImageView.swift */,
 				3AA215A92C42DAD700501BC0 /* URLConstants.swift */,
@@ -174,9 +180,11 @@
 				3AA215B22C430B4300501BC0 /* MainImageView.swift in Sources */,
 				3AA215B72C430D6600501BC0 /* BackButtonView.swift in Sources */,
 				3AA215A62C42D2B800501BC0 /* ViewModel.swift in Sources */,
+				3AA215BD2C453B7800501BC0 /* EpisodeView.swift in Sources */,
 				3AA215A42C42D25B00501BC0 /* NetworkManager.swift in Sources */,
 				3AA215A22C42D22800501BC0 /* Model.swift in Sources */,
 				3AA215AC2C42EC3800501BC0 /* AsyncImageView.swift in Sources */,
+				3AA215BB2C45293700501BC0 /* FullScreenImageView.swift in Sources */,
 				3AA215AA2C42DAD700501BC0 /* URLConstants.swift in Sources */,
 				3AA215B02C430B1600501BC0 /* SizeConstants.swift in Sources */,
 				3AA215A82C42DAB700501BC0 /* NetworkError.swift in Sources */,

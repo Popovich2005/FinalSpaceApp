@@ -1,21 +1,12 @@
-//
-//  ContentView.swift
-//  FinalSpaceApp
-//
-//  Created by Алексей Попов on 13.07.2024.
-//
 
 import SwiftUI
-
-
 
 struct ContentView: View {
     
     @StateObject var vm = ViewModel()
     @State private var searchText = ""
     
-    
-    var filteredCharacters: [WelcomeElement] {
+    var filteredCharacters: [Character] {
         if searchText.isEmpty {
             return vm.characters
         } else {
@@ -44,35 +35,41 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
                 .padding(.top, 10)
-                ScrollView {
-                    ForEach(filteredCharacters, id: \.id) { character in
-                        NavigationLink(destination:CharacterDetailView(character:character)) {
-                            VStack(alignment: .leading) {
-                                HStack {
-                                    AsyncImageView(character: character)
-                                        .frame(width: 100, height: 100)
-                                    VStack(alignment: .leading) {
-                                        Text(character.name)
-                                            .font(.title3)
-                                            .padding(.bottom, 10)
-                                        Text(character.status)
-                                            .font(.subheadline)
+                
+                if vm.characters.isEmpty {
+                    ProgressView("Loading...")
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .padding()
+                } else {
+                    ScrollView {
+                        ForEach(filteredCharacters, id: \.id) { character in
+                            NavigationLink(destination: CharacterDetailView(character: character)) {
+                                VStack(alignment: .leading) {
+                                    HStack {
+                                        AsyncImageView(character: character)
+                                            .frame(width: 100, height: 100)
+                                        VStack(alignment: .leading) {
+                                            Text(character.name)
+                                                .font(.title3)
+                                                .padding(.bottom, 10)
+                                            Text(character.status)
+                                                .font(.subheadline)
+                                        }
+                                        .padding()
                                     }
-                                    .padding()
+                                    
+                                    Divider() // Разделитель между элементами
+                                        .padding(.leading) // Отступ слева для разделителя
                                 }
-                                
-                                Divider() // Разделитель между элементами
-                                    .padding(.leading) // Отступ слева для разделителя
+                                .padding()
+                                .frame(height: 110)
                             }
-                            .padding()
-                            .frame(height: 110)
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
-                        .navigationTitle("Characters")
                     }
                 }
-                //            .searchable(text: $searchText, prompt: "Введите Имя")
             }
+            .navigationTitle("Characters")
         }
     }
 }

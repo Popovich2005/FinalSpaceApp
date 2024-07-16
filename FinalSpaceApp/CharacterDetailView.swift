@@ -9,13 +9,17 @@ import SwiftUI
 
 struct CharacterDetailView: View {
     
-    let character: WelcomeElement
+//    @State private var showImageFullScreen = false
+    
+    let character: Character
     
     var body: some View {
         ZStack(alignment: .topLeading) {
             
             ScrollView(.vertical, showsIndicators: false) {
-                MainImageView(character: character)
+                NavigationLink(destination: FullScreenImageView(character: character)) {
+                    MainImageView(character: character)
+                }
                 
                 VStack (alignment: .leading, spacing: 10) {
                     
@@ -24,22 +28,22 @@ struct CharacterDetailView: View {
                         .padding()
                     
                     Text("Status: \(character.status)")
-//                        .font(.title2)
+                    //                        .font(.title2)
                     
                     Text("Species: \(character.species ?? "Unknown")")
-//                        .font(.title2)
+                    //                        .font(.title2)
                     
                     Text("Gender: \(character.gender)")
-//                        .font(.title2)
+                    //                        .font(.title2)
                     Text("Hair: \(character.hair)")
                     
                     Text("Alias: \(character.alias?.joined(separator: ", ") ?? "Unknown")")
                     
                     Text("Origin: \(character.origin)")
-//                        .font(.title2)
+                    //                        .font(.title2)
                     
                     Text("Abilities: \(character.abilities.joined(separator: ", "))")
-//                        .font(.title2)
+                    //                        .font(.title2)
                     
                     
                     
@@ -54,11 +58,11 @@ struct CharacterDetailView: View {
             
             BackButtonView()
                 .padding()
-
+            
         }
     }
 }
 
 #Preview {
-    CharacterDetailView(character: WelcomeElement(id: 0, name: "Name", status: "Status", species: "Species", gender: "Gender", hair: "Hair", alias: ["Alias"], origin: "Origin", abilities: ["Abilities"], imgURL: "ImgURL"))
+    CharacterDetailView(character: Character(id: 0, name: "Name", status: "Status", species: "Species", gender: "Gender", hair: "Hair", alias: ["Alias"], origin: "Origin", abilities: ["Abilities"], imgURL: "ImgURL"))
 }
