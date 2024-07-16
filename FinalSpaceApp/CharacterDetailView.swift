@@ -17,8 +17,8 @@ struct CharacterDetailView: View {
         ZStack(alignment: .topLeading) {
             
             ScrollView(.vertical, showsIndicators: false) {
-                NavigationLink(destination: FullScreenImageView(character: character)) {
-                    MainImageView(character: character)
+                NavigationLink(destination: FullScreenImageView(model: character)) {
+                    MainImageView(model: character)
                 }
                 
                 VStack (alignment: .leading, spacing: 10) {

@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct MainImageView: View {
-    
-    let character: Character
 
+struct MainImageView<Model: HasImageURL>: View {
+    
+    let model: Model
     
     var body: some View {
         GeometryReader { reader in
-            if let url = character.imgURL, let imageURL = URL(string: url) {
+            if let urlStr = model.imgURL, let imageURL = URL(string: urlStr) {
                 AsyncImage(url: imageURL) { phase in
                     if let image = phase.image {
                         image
@@ -29,7 +29,7 @@ struct MainImageView: View {
                     } else {
                         ZStack {
                             Rectangle()
-                                .frame(height: 100)
+                                .frame(height: 400)
                                 .foregroundStyle(.secondary)
                                 .opacity(0.3)
                                 .cornerRadius(10)
@@ -47,3 +47,15 @@ struct MainImageView: View {
         .frame(height: SizeConstants.avatarHeight)
     }
 }
+
+//extension Episode: HasImageURL {
+//    var imgURLEpisode: String? {
+//        return self.imgURL
+//    }
+//}
+//
+//extension Character: HasImageURL {
+//    var imgURLCharacter: String? {
+//        return self.imgURL
+//    }
+//}

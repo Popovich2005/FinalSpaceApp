@@ -19,7 +19,7 @@ struct Character: Decodable {
 }
 
 // MARK: - Episode
-struct Episode: Decodable, Hashable {
+struct Episode: Decodable {
     let id: Int
     let name, airDate, director: String
     let writer: Writer

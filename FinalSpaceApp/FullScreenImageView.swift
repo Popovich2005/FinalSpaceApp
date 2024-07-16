@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct FullScreenImageView: View {
+struct FullScreenImageView<Model: HasImageURL>: View {
     
-    let character: Character
+    let model: Model
     
     var body: some View {
         ZStack(alignment: .topLeading) {
             
             Color.black.edgesIgnoringSafeArea(.all)
             
-            if let url = character.imgURL, let imageURL = URL(string: url) {
+            if let urlStr = model.imgURL, let imageURL = URL(string: urlStr) {
                 AsyncImage(url: imageURL) { phase in
                     phase
                         .resizable()
