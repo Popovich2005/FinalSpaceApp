@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct MainImageView<Model: HasImageURL>: View {
+struct MainImageView<Model: DownloadableImage>: View {
     
     let model: Model
     

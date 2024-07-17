@@ -18,14 +18,20 @@ struct ContentView: View {
         TabView {
             HomeView(vm: vm, searchText: $searchText)
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Characters", systemImage: "house")
                 }
             
             EpisodesView(vm: vm)
                 .tabItem {
                     Label("Episodes", systemImage: "list.bullet")
                 }
+            
+            LocationsView(vm: vm)
+                .tabItem {
+                    Label("Locations", systemImage: "location")
+                }
         }
+        .environmentObject(vm)
     }
 }
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FullScreenImageView<Model: HasImageURL>: View {
+struct FullScreenImageView<Model: DownloadableImage>: View {
     
     let model: Model
     

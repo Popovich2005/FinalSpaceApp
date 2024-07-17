@@ -1,31 +1,31 @@
 //
-//  EpisodesView.swift
+//  LocationsView.swift
 //  FinalSpaceApp
 //
-//  Created by Алексей Попов on 16.07.2024.
+//  Created by Алексей Попов on 17.07.2024.
 //
 
 import SwiftUI
 
-struct EpisodesView: View {
+struct LocationsView: View {
     
     @ObservedObject var vm: ViewModel
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             ScrollView {
-                ForEach(vm.episodes, id: \.id) { episode in
-                    NavigationLink(destination: EpisodeDetailView(episode: episode)) {
+                ForEach(vm.locations, id: \.id) { location in
+                    NavigationLink(destination: LocationDetailView(location: location)) {
                         VStack(alignment: .leading) {
                             HStack {
-                                AsyncImageView(model: episode)
+                                AsyncImageView(model: location)
                                     .frame(width: 100, height: 100)
                                 VStack(alignment: .leading) {
-                                    Text(episode.name)
+                                    Text(location.name)
                                         .font(.title3)
 //                                        .fixedSize(horizontal: false, vertical: true)
                                         .padding(.bottom, 10)
-                                    Text(episode.airDate)
+                                    Text(location.type)
                                         .font(.subheadline)
                                 }
                                 .padding()
@@ -40,12 +40,10 @@ struct EpisodesView: View {
                     .buttonStyle(.plain)
                 }
             }
-            .navigationTitle("Episodes")
+            .navigationTitle("Locations")
         }
     }
 }
-
-
 #Preview {
-    EpisodesView(vm: ViewModel())
+    LocationsView(vm: ViewModel())
 }

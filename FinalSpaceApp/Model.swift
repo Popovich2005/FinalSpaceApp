@@ -39,3 +39,37 @@ enum Writer: String, Codable {
     case olanRogers = "Olan Rogers"
     case yoriakiMochizuki = "Yoriaki Mochizuki"
 }
+
+// MARK: - Location
+struct Location: Decodable {
+    let id: Int
+    let name, type: String
+    let inhabitants: [String]
+    let notableResidents: [String]
+    let imgURL: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, type, inhabitants
+        case notableResidents = "notable_residents"
+        case imgURL = "img_url"
+    }
+}
+
+// MARK: - Extensions
+extension Episode: DownloadableImage {
+    var imgURLEpisode: String? {
+        return self.imgURL
+    }
+}
+
+extension Character: DownloadableImage {
+    var imgURLCharacter: String? {
+        return self.imgURL
+    }
+}
+
+extension Location: DownloadableImage {
+    var imgURLLocation: String? {
+        return self.imgURL
+    }
+}

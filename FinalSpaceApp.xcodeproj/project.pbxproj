@@ -26,6 +26,9 @@
 		3AA215BF2C467AE100501BC0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215BE2C467AE100501BC0 /* HomeView.swift */; };
 		3AA215C12C467B5900501BC0 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C02C467B5900501BC0 /* EpisodesView.swift */; };
 		3AA215C32C467B8600501BC0 /* EpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */; };
+		3AA215C72C47AD1F00501BC0 /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C62C47AD1F00501BC0 /* DownloadableImage.swift */; };
+		3AA215C92C47D77B00501BC0 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C82C47D77B00501BC0 /* LocationsView.swift */; };
+		3AA215CB2C47D9AC00501BC0 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		3AA215C02C467B5900501BC0 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailView.swift; sourceTree = "<group>"; };
 		3AA215C42C46859B00501BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3AA215C62C47AD1F00501BC0 /* DownloadableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
+		3AA215C82C47D77B00501BC0 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 				3AA215A72C42DAB700501BC0 /* NetworkError.swift */,
 				3AA215AD2C4307CF00501BC0 /* CharacterDetailView.swift */,
 				3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */,
+				3AA215C82C47D77B00501BC0 /* LocationsView.swift */,
+				3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */,
 				3AA215C02C467B5900501BC0 /* EpisodesView.swift */,
 				3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */,
 				3AA215BE2C467AE100501BC0 /* HomeView.swift */,
@@ -100,6 +108,7 @@
 				3AA215AB2C42EC3800501BC0 /* AsyncImageView.swift */,
 				3AA215A32C42D25B00501BC0 /* NetworkManager.swift */,
 				3AA215AF2C430B1600501BC0 /* SizeConstants.swift */,
+				3AA215C52C47ACEC00501BC0 /* Protocols */,
 				3AA215972C42D1A200501BC0 /* Assets.xcassets */,
 				3AA215992C42D1A200501BC0 /* Preview Content */,
 			);
@@ -112,6 +121,14 @@
 				3AA2159A2C42D1A200501BC0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AA215C52C47ACEC00501BC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215C62C47AD1F00501BC0 /* DownloadableImage.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +204,7 @@
 				3AA215AE2C4307CF00501BC0 /* CharacterDetailView.swift in Sources */,
 				3AA215B22C430B4300501BC0 /* MainImageView.swift in Sources */,
 				3AA215B72C430D6600501BC0 /* BackButtonView.swift in Sources */,
+				3AA215C72C47AD1F00501BC0 /* DownloadableImage.swift in Sources */,
 				3AA215C32C467B8600501BC0 /* EpisodeDetailView.swift in Sources */,
 				3AA215A62C42D2B800501BC0 /* ViewModel.swift in Sources */,
 				3AA215A42C42D25B00501BC0 /* NetworkManager.swift in Sources */,
@@ -194,12 +212,14 @@
 				3AA215AC2C42EC3800501BC0 /* AsyncImageView.swift in Sources */,
 				3AA215BB2C45293700501BC0 /* FullScreenImageView.swift in Sources */,
 				3AA215AA2C42DAD700501BC0 /* URLConstants.swift in Sources */,
+				3AA215C92C47D77B00501BC0 /* LocationsView.swift in Sources */,
 				3AA215B02C430B1600501BC0 /* SizeConstants.swift in Sources */,
 				3AA215A82C42DAB700501BC0 /* NetworkError.swift in Sources */,
 				3AA215962C42D1A000501BC0 /* ContentView.swift in Sources */,
 				3AA215BF2C467AE100501BC0 /* HomeView.swift in Sources */,
 				3AA215942C42D1A000501BC0 /* FinalSpaceAppApp.swift in Sources */,
 				3AA215B42C430CBE00501BC0 /* GradientAvatarView.swift in Sources */,
+				3AA215CB2C47D9AC00501BC0 /* LocationDetailView.swift in Sources */,
 				3AA215C12C467B5900501BC0 /* EpisodesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

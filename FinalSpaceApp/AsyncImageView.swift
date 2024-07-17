@@ -7,11 +7,7 @@
 
 import SwiftUI
 
-protocol HasImageURL {
-    var imgURL: String? { get }
-}
-
-struct AsyncImageView<Model: HasImageURL>: View {
+struct AsyncImageView<Model: DownloadableImage>: View {
     
     // MARK: - Properties
     let model: Model
@@ -46,14 +42,3 @@ struct AsyncImageView<Model: HasImageURL>: View {
     }
 }
 
-extension Episode: HasImageURL {
-    var imgURLEpisode: String? {
-        return self.imgURL
-    }
-}
-
-extension Character: HasImageURL {
-    var imgURLCharacter: String? {
-        return self.imgURL
-    }
-}
