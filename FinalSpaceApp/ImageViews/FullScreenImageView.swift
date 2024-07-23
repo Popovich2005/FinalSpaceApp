@@ -1,9 +1,3 @@
-//
-//  FullScreenImageView.swift
-//  FinalSpaceApp
-//
-//  Created by Алексей Попов on 15.07.2024.
-//
 
 import SwiftUI
 
@@ -20,8 +14,6 @@ struct FullScreenImageView<Model: DownloadableImage>: View {
                 AsyncImage(url: imageURL) { phase in
                     phase
                         .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .ignoresSafeArea()
                 } placeholder: {
                     ProgressView()

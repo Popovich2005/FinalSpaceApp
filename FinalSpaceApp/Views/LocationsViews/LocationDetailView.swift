@@ -1,19 +1,16 @@
-//
-//  LocationDetailView.swift
-//  FinalSpaceApp
-//
-//  Created by Алексей Попов on 17.07.2024.
-//
+
 
 import SwiftUI
 
 struct LocationDetailView: View {
     
     let location: Location
+    let vm: ViewModel
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            
+            SpaceGradientBackground()
+
             ScrollView{
                 NavigationLink(destination: FullScreenImageView(model: location)) {
                     MainImageView(model: location)
@@ -26,14 +23,18 @@ struct LocationDetailView: View {
                         .font(.title3)
                     Text("Inhabitants: \(location.inhabitants.map { String($0) }.joined(separator: ", "))")
                         .font(.title3)
-                    Text("Notable Residents: \(location.notableResidents.map { String($0) }.joined(separator: ", "))")
-                        .font(.title3)
 
+                    Text("Notable Residents: " + location.notableResidents.map { characterURLString in
+                        guard let characterID = characterURLString.split(separator: "/").last,
+                              let character = vm.charactersDict[Int(characterID) ?? 0] else { return "Character not found" }
+                        
+                        return character.name
+                    }
+                    .joined(separator: ", "))
                 }
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(GradientAvatarView())
-                
             }
             .ignoresSafeArea()
             .navigationBarHidden(true)
@@ -41,9 +42,7 @@ struct LocationDetailView: View {
             BackButtonView()
                 .padding()
         }
+        .foregroundStyle(.white)
     }
 }
 
-//#Preview {
-//    LocationDetailView(location: Location(from: <#Decoder#>))
-//}

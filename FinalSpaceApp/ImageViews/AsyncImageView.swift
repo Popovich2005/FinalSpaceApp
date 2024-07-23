@@ -1,9 +1,3 @@
-//
-//  AsyncImageView.swift
-//  FinalSpaceApp
-//
-//  Created by Алексей Попов on 13.07.2024.
-//
 
 import SwiftUI
 

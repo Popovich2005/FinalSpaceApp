@@ -55,6 +55,27 @@ struct Location: Decodable {
     }
 }
 
+// MARK: - Quotes
+struct Quotes: Decodable {
+    let id: Int
+    let quote, by: String
+    let character: String
+    let image: String?
+}
+
+// MARK: - Star
+struct StarPosition: Hashable {
+    let x: CGFloat
+    let y: CGFloat
+}
+
+struct Star: Identifiable, Hashable {
+    let id = UUID()
+    let position: StarPosition
+    let size: CGFloat
+    let opacity: Double
+}
+
 // MARK: - Extensions
 extension Episode: DownloadableImage {
     var imgURLEpisode: String? {
@@ -71,5 +92,11 @@ extension Character: DownloadableImage {
 extension Location: DownloadableImage {
     var imgURLLocation: String? {
         return self.imgURL
+    }
+}
+
+extension Quotes: DownloadableImage {
+    var imgURL: String? {
+        return self.image
     }
 }

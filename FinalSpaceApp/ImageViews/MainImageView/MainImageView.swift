@@ -1,9 +1,3 @@
-//
-//  MainImageView.swift
-//  FinalSpaceApp
-//
-//  Created by Алексей Попов on 13.07.2024.
-//
 
 import SwiftUI
 
@@ -47,15 +41,3 @@ struct MainImageView<Model: DownloadableImage>: View {
         .frame(height: SizeConstants.avatarHeight)
     }
 }
-
-//extension Episode: HasImageURL {
-//    var imgURLEpisode: String? {
-//        return self.imgURL
-//    }
-//}
-//
-//extension Character: HasImageURL {
-//    var imgURLCharacter: String? {
-//        return self.imgURL
-//    }
-//}

@@ -6,19 +6,13 @@ struct ContentView: View {
     @StateObject var vm = ViewModel()
     @State private var searchText = ""
     
-    var filteredCharacters: [Character] {
-        if searchText.isEmpty {
-            return vm.characters
-        } else {
-            return vm.characters.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
-        }
-    }
-    
     var body: some View {
+        
         TabView {
-            HomeView(vm: vm, searchText: $searchText)
+            
+            CharacterView(vm: vm, searchText: $searchText)
                 .tabItem {
-                    Label("Characters", systemImage: "house")
+                    Label("Characters", systemImage: "person.2.fill")
                 }
             
             EpisodesView(vm: vm)
@@ -29,6 +23,11 @@ struct ContentView: View {
             LocationsView(vm: vm)
                 .tabItem {
                     Label("Locations", systemImage: "location")
+                }
+            
+            QuotesView(vm: vm)
+                .tabItem {
+                    Label("Quotes", systemImage: "quote.bubble")
                 }
         }
         .environmentObject(vm)

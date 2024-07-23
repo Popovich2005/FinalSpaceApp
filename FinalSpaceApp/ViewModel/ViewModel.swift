@@ -8,12 +8,14 @@ final class ViewModel: ObservableObject {
     @Published var characters: [Character] = []
     @Published var episodes: [Episode] = []
     @Published var locations: [Location] = []
+    @Published var quotes: [Quotes] = []
     @Published var charactersDict: [Int: Character] = [:]
     
     init() {
         fetchCharacters()
         fetchEpisodes()
         fetchLocations()
+        fetchQuotes()
     }
     
     // MARK: - Metods
@@ -49,6 +51,18 @@ final class ViewModel: ObservableObject {
             do {
                 let locations: [Location] = try await NetworkManager.shared.getData(urlString: URLConstants.locationURL)
                 self.locations = locations
+            } catch {
+                if let error = error as? NetworkError {
+                    print(error)
+                }
+            }
+        }
+    }
+    func fetchQuotes() {
+        Task {
+            do {
+                let quotes: [Quotes] = try await NetworkManager.shared.getData(urlString: URLConstants.quoteURL)
+                self.quotes = quotes
             } catch {
                 if let error = error as? NetworkError {
                     print(error)

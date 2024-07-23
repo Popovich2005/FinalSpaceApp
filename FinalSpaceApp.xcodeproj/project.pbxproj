@@ -23,12 +23,14 @@
 		3AA215B42C430CBE00501BC0 /* GradientAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */; };
 		3AA215B72C430D6600501BC0 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215B62C430D6600501BC0 /* BackButtonView.swift */; };
 		3AA215BB2C45293700501BC0 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */; };
-		3AA215BF2C467AE100501BC0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215BE2C467AE100501BC0 /* HomeView.swift */; };
+		3AA215BF2C467AE100501BC0 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215BE2C467AE100501BC0 /* CharacterView.swift */; };
 		3AA215C12C467B5900501BC0 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C02C467B5900501BC0 /* EpisodesView.swift */; };
 		3AA215C32C467B8600501BC0 /* EpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */; };
 		3AA215C72C47AD1F00501BC0 /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C62C47AD1F00501BC0 /* DownloadableImage.swift */; };
 		3AA215C92C47D77B00501BC0 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215C82C47D77B00501BC0 /* LocationsView.swift */; };
 		3AA215CB2C47D9AC00501BC0 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */; };
+		3AA215CD2C4A566000501BC0 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215CC2C4A566000501BC0 /* QuotesView.swift */; };
+		3AA215CF2C4A744D00501BC0 /* SpaceGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA215CE2C4A744D00501BC0 /* SpaceGradientBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,13 +51,15 @@
 		3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAvatarView.swift; sourceTree = "<group>"; };
 		3AA215B62C430D6600501BC0 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
-		3AA215BE2C467AE100501BC0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3AA215BE2C467AE100501BC0 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		3AA215C02C467B5900501BC0 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailView.swift; sourceTree = "<group>"; };
 		3AA215C42C46859B00501BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3AA215C62C47AD1F00501BC0 /* DownloadableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
 		3AA215C82C47D77B00501BC0 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		3AA215CC2C4A566000501BC0 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
+		3AA215CE2C4A744D00501BC0 /* SpaceGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceGradientBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,24 +94,11 @@
 			children = (
 				3AA215C42C46859B00501BC0 /* Info.plist */,
 				3AA215932C42D1A000501BC0 /* FinalSpaceAppApp.swift */,
-				3AA215952C42D1A000501BC0 /* ContentView.swift */,
-				3AA215A12C42D22800501BC0 /* Model.swift */,
-				3AA215A52C42D2B700501BC0 /* ViewModel.swift */,
-				3AA215A72C42DAB700501BC0 /* NetworkError.swift */,
-				3AA215AD2C4307CF00501BC0 /* CharacterDetailView.swift */,
-				3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */,
-				3AA215C82C47D77B00501BC0 /* LocationsView.swift */,
-				3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */,
-				3AA215C02C467B5900501BC0 /* EpisodesView.swift */,
-				3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */,
-				3AA215BE2C467AE100501BC0 /* HomeView.swift */,
-				3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */,
-				3AA215B62C430D6600501BC0 /* BackButtonView.swift */,
-				3AA215B12C430B4300501BC0 /* MainImageView.swift */,
-				3AA215A92C42DAD700501BC0 /* URLConstants.swift */,
-				3AA215AB2C42EC3800501BC0 /* AsyncImageView.swift */,
-				3AA215A32C42D25B00501BC0 /* NetworkManager.swift */,
-				3AA215AF2C430B1600501BC0 /* SizeConstants.swift */,
+				3AA215D42C4FD65300501BC0 /* Views */,
+				3AA215D32C4FD61E00501BC0 /* ViewModel */,
+				3AA215D22C4FD5D200501BC0 /* ImageViews */,
+				3AA215D12C4FD45300501BC0 /* Network */,
+				3AA215D02C4FD34300501BC0 /* Model */,
 				3AA215C52C47ACEC00501BC0 /* Protocols */,
 				3AA215972C42D1A200501BC0 /* Assets.xcassets */,
 				3AA215992C42D1A200501BC0 /* Preview Content */,
@@ -129,6 +120,109 @@
 				3AA215C62C47AD1F00501BC0 /* DownloadableImage.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3AA215D02C4FD34300501BC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215A12C42D22800501BC0 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AA215D12C4FD45300501BC0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215A92C42DAD700501BC0 /* URLConstants.swift */,
+				3AA215A32C42D25B00501BC0 /* NetworkManager.swift */,
+				3AA215A72C42DAB700501BC0 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3AA215D22C4FD5D200501BC0 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215D52C4FD69D00501BC0 /* MainImageView */,
+				3AA215BA2C45293700501BC0 /* FullScreenImageView.swift */,
+				3AA215AB2C42EC3800501BC0 /* AsyncImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		3AA215D32C4FD61E00501BC0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215A52C42D2B700501BC0 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3AA215D42C4FD65300501BC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215952C42D1A000501BC0 /* ContentView.swift */,
+				3AA215D92C4FD9CA00501BC0 /* CharatersViews */,
+				3AA215D82C4FD9AC00501BC0 /* LocationsViews */,
+				3AA215D72C4FD96500501BC0 /* EpisodesViews */,
+				3AA215DA2C4FD9DF00501BC0 /* QuotesView */,
+				3AA215D62C4FD7DC00501BC0 /* SubView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AA215D52C4FD69D00501BC0 /* MainImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215B12C430B4300501BC0 /* MainImageView.swift */,
+				3AA215B32C430CBE00501BC0 /* GradientAvatarView.swift */,
+				3AA215AF2C430B1600501BC0 /* SizeConstants.swift */,
+			);
+			path = MainImageView;
+			sourceTree = "<group>";
+		};
+		3AA215D62C4FD7DC00501BC0 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215B62C430D6600501BC0 /* BackButtonView.swift */,
+				3AA215CE2C4A744D00501BC0 /* SpaceGradientBackground.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		3AA215D72C4FD96500501BC0 /* EpisodesViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215C02C467B5900501BC0 /* EpisodesView.swift */,
+				3AA215C22C467B8600501BC0 /* EpisodeDetailView.swift */,
+			);
+			path = EpisodesViews;
+			sourceTree = "<group>";
+		};
+		3AA215D82C4FD9AC00501BC0 /* LocationsViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215C82C47D77B00501BC0 /* LocationsView.swift */,
+				3AA215CA2C47D9AC00501BC0 /* LocationDetailView.swift */,
+			);
+			path = LocationsViews;
+			sourceTree = "<group>";
+		};
+		3AA215D92C4FD9CA00501BC0 /* CharatersViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215BE2C467AE100501BC0 /* CharacterView.swift */,
+				3AA215AD2C4307CF00501BC0 /* CharacterDetailView.swift */,
+			);
+			path = CharatersViews;
+			sourceTree = "<group>";
+		};
+		3AA215DA2C4FD9DF00501BC0 /* QuotesView */ = {
+			isa = PBXGroup;
+			children = (
+				3AA215CC2C4A566000501BC0 /* QuotesView.swift */,
+			);
+			path = QuotesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +300,10 @@
 				3AA215B72C430D6600501BC0 /* BackButtonView.swift in Sources */,
 				3AA215C72C47AD1F00501BC0 /* DownloadableImage.swift in Sources */,
 				3AA215C32C467B8600501BC0 /* EpisodeDetailView.swift in Sources */,
+				3AA215CD2C4A566000501BC0 /* QuotesView.swift in Sources */,
 				3AA215A62C42D2B800501BC0 /* ViewModel.swift in Sources */,
 				3AA215A42C42D25B00501BC0 /* NetworkManager.swift in Sources */,
+				3AA215CF2C4A744D00501BC0 /* SpaceGradientBackground.swift in Sources */,
 				3AA215A22C42D22800501BC0 /* Model.swift in Sources */,
 				3AA215AC2C42EC3800501BC0 /* AsyncImageView.swift in Sources */,
 				3AA215BB2C45293700501BC0 /* FullScreenImageView.swift in Sources */,
@@ -216,7 +312,7 @@
 				3AA215B02C430B1600501BC0 /* SizeConstants.swift in Sources */,
 				3AA215A82C42DAB700501BC0 /* NetworkError.swift in Sources */,
 				3AA215962C42D1A000501BC0 /* ContentView.swift in Sources */,
-				3AA215BF2C467AE100501BC0 /* HomeView.swift in Sources */,
+				3AA215BF2C467AE100501BC0 /* CharacterView.swift in Sources */,
 				3AA215942C42D1A000501BC0 /* FinalSpaceAppApp.swift in Sources */,
 				3AA215B42C430CBE00501BC0 /* GradientAvatarView.swift in Sources */,
 				3AA215CB2C47D9AC00501BC0 /* LocationDetailView.swift in Sources */,
