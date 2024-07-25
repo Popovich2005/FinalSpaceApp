@@ -4,7 +4,7 @@
 
 Для написания программы использовался язык SwifUI, архитектура: MVVC
 
-![1](https://github.com/Popovich2005/FinalSpaceApp/blob/main/ScreenShots/1.png)
+
 Главный экран состоит из поиска персонажа по его имени, самих персонажей, которых можно прокручивать, а так же TabView в котором находятся заклдки с персонажами, эпизодами, локациями, и высказываниями.
 
 ![2](https://github.com/Popovich2005/FinalSpaceApp/blob/main/ScreenShots/2.png)
