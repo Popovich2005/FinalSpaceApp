@@ -18,4 +18,7 @@
 
 Тапая на Tab Bar можно переключатся по закладкам, в которых также реализована более детальная информация.
 
+![4](https://github.com/Popovich2005/FinalSpaceApp/blob/main/ScreenShots/4.png)
+![5](https://github.com/Popovich2005/FinalSpaceApp/blob/main/ScreenShots/5.png)
+![6](https://github.com/Popovich2005/FinalSpaceApp/blob/main/ScreenShots/6.png)
 
